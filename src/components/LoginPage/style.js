@@ -26,7 +26,21 @@ const StyledLink = styled(Link)`
     color: #52B6FF;
 `;
 
+const ErrorMessage = styled.span`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 10px;
+
+    font-size: 10px;
+    line-height: 17px;
+    
+    color: #CC2828;
+`;
+
 export {
     Container,
-    StyledLink
+    StyledLink,
+    ErrorMessage,
 }

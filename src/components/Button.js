@@ -24,6 +24,8 @@ const Button = styled.button`
     
     cursor: pointer;
 
+    opacity: ${props => props.isLoading ? 0.7 : 1};
+
 `;
 
 export default Button;

@@ -9,15 +9,16 @@ const Input = styled.input`
     font-family: 'Lexend Deca', sans-serif;
 
     border: 1px solid #D5D5D5;
-    background-color: #FFF;
+    background-color: ${props => props.isLoading ? "#F2F2F2" : "#FFF"};
 
     padding: 14px;
     margin-bottom: 10px;
     border-radius: 4px;
 
     ::placeholder {
-        color: #DBDBDB;
+        color: ${props => props.isLoading ? "#AFAFAF" : "#DBDBDB"};
         font-family: 'Lexend Deca', sans-serif;
+        opacity: ${props => props.isLoading ? 0.5 : 1};
     }
 `;
 

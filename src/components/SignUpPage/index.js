@@ -1,13 +1,22 @@
 import axios from "axios";
-import { useState } from "react";
+import Loader from "react-loader-spinner";
+import { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-import { Container, StyledLink } from "./style";
+import { Container, StyledLink, ErrorMessage } from "./style";
 
 import BigLogo from "../BigLogo";
 import Button from "../Button";
 import Input from "../Input";
+import UserContext from "../../contexts/UserContext";
 
 export default function SignUpPage() {
+    const { isLoading, setLoading } = useContext(UserContext);
+
+    const [errorMessage, setErrorMessage] = useState('');
+    const [error, setError] = useState(false);
+
+    const navigate = useNavigate();
 
     const [formData, setFormData] = useState({
         email: '',
@@ -19,12 +28,27 @@ export default function SignUpPage() {
     function handleSignUp(e) {
         e.preventDefault();
 
+        setLoading(true);
+
         const promise = axios.post("https://mock-api.bootcamp.respondeai.com.br/api/v2/trackit/auth/sign-up", {
             ...formData
         });
 
-        promise.then(response => console.log(response));
-        promise.catch(error => console.log(error.response));
+        promise.then(handleSuccess);
+        promise.catch(handleError);
+    }
+
+    function handleSuccess() {
+        setLoading(false);
+        navigate('/');
+    }
+
+    function handleError(error) {
+        setLoading(false);
+        setErrorMessage(error.response.data.message);
+        setError(true);
+
+        console.log(error.response)
     }
 
     function handleInputChange(e) {
@@ -37,34 +61,49 @@ export default function SignUpPage() {
             <Container>
                 <form onSubmit={handleSignUp}>
                     <Input
+                        isLoading={isLoading}
+                        disabled={isLoading}
                         type="email"
                         value={formData.email}
                         onChange={handleInputChange}
                         name="email"
                         placeholder="email"
+                        required
                     />
                     <Input
+                        isLoading={isLoading}
+                        disabled={isLoading}
                         type="password"
                         value={formData.password}
                         onChange={handleInputChange}
                         name="password"
                         placeholder="senha"
+                        required
                     />
                     <Input
+                        isLoading={isLoading}
+                        disabled={isLoading}
                         type="text"
                         value={formData.name}
                         onChange={handleInputChange}
                         name="name"
                         placeholder="nome"
+                        required
                     />
                     <Input
+                        isLoading={isLoading}
+                        disabled={isLoading}
                         type="text"
                         value={formData.image}
                         onChange={handleInputChange}
                         name="image"
                         placeholder="foto"
+                        required
                     />
-                    <Button type="submit">Cadastrar</Button>
+                    {error && <ErrorMessage>{errorMessage}</ErrorMessage>}
+                    <Button isLoading={isLoading} disabled={isLoading} type="submit">
+                        {isLoading ? <Loader type="ThreeDots" color="#FFF" height={13} width={100} /> : "Cadastrar"}
+                    </Button>
                 </form>
                 <StyledLink to="/">Já tem uma conta? Faça login!</StyledLink>
             </Container>
