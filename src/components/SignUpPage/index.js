@@ -44,9 +44,14 @@ export default function SignUpPage() {
     }
 
     function handleError(error) {
+
         setLoading(false);
-        setErrorMessage(error.response.data.message);
-        setError(true);
+        if (error.response.status === 422) {
+            setErrorMessage("Por favor, insira a URL de uma imagem válida!");
+        } else if (error.response.status === 409) {
+            setErrorMessage(error.response.data.message);
+        }
+        setError(true)
 
         console.log(error.response)
     }
