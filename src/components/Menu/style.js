@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const Container = styled.div`
+    box-sizing: border-box;
+
     width: 100%;
     height: 70px;
 
@@ -20,6 +22,10 @@ const Container = styled.div`
 `;
 
 const StyledLink = styled(Link)`
+    box-sizing: border-box;
+    
+    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,6 +38,7 @@ const StyledLink = styled(Link)`
 `;
 
 const ProgressBar = styled.div`
+
     width: 90px;
     height: 90px;
 

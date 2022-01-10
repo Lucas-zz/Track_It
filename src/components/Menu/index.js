@@ -1,16 +1,41 @@
+import axios from "axios";
+import { useContext, useEffect, useState } from "react";
+import UserContext from "../../contexts/UserContext";
+
 import { Container, StyledLink, ProgressBar } from "./style";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import 'react-circular-progressbar/dist/styles.css';
 
-import { useContext } from "react";
-import UserContext from "../../contexts/UserContext";
-
 export default function Menu() {
 
-    const { dailyPercentage } = useContext(UserContext);
+    const [reset, setReset] = useState([]);
+    const { percentage, setPercentage, token } = useContext(UserContext);
 
-    const percentage = 66;
+    useEffect(() => {
+        setReset(false);
 
+        const promise = axios.get('https://mock-api.bootcamp.respondeai.com.br/api/v2/trackit/habits/today', {
+            headers: {
+                Authorization: `Bearer ${token}`
+            }
+        });
+
+        promise.then(response => {
+            setPercentage(integer(response.data));
+        });
+
+        promise.then(error => {
+            console.log(error.data.message);
+        })
+    }, [reset]);
+
+    function integer(data) {
+        if (isNaN(parseInt(data.filter((element) => element.done === true).length / data.length * 100))) {
+            return 0;
+        } else {
+            return parseInt(data.filter((element) => element.done === true).length / data.length * 100)
+        }
+    }
 
     return (
         <Container>

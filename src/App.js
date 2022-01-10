@@ -12,9 +12,10 @@ export default function App() {
     const [token, setToken] = useState('');
     const [user, setUser] = useState(null);
     const [isLoading, setLoading] = useState(false);
+    const [percentage, setPercentage] = useState([]);
 
     return (
-        <UserContext.Provider value={{ user, setUser, token, setToken, isLoading, setLoading }}>
+        <UserContext.Provider value={{ user, setUser, token, setToken, isLoading, setLoading, percentage, setPercentage }}>
             <GlobalStyle />
             <BrowserRouter>
                 <Routes>

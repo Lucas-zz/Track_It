@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 const Button = styled.button`
-    height: 45px;
     width: 100%;
-        
+    height: 45px;
     font-size: 21px;
     line-height: 26px;
     
     margin-bottom: 10px;
+    padding-bottom: 3px;
     
     border-radius: 4px;
     border: none;
