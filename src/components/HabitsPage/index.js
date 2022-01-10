@@ -7,6 +7,7 @@ import UserContext from "../../contexts/UserContext";
 import DayOfTheWeek from "../DayOfTheWeek";
 import Input from "../generic/Input";
 import { Title } from "../generic/Title";
+import { DefaultMessage } from "../generic/DefaultMessage";
 import Menu from "../generic/Menu";
 import TopBar from "../generic/TopBar";
 import UserHabit from "../UserHabit";
