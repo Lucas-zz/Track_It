@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
-import UserContext from "../../contexts/UserContext";
+import UserContext from "../../../contexts/UserContext";
 
 import { Container, StyledLink, ProgressBar } from "./style";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";

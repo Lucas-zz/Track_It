@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import Logo from "../../assets/img/smallLogo.png"
-import UserContext from "../../contexts/UserContext";
+import UserContext from "../../../contexts/UserContext";
 
 import { Container, UserImg } from "./style";
 

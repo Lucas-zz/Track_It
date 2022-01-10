@@ -2,9 +2,9 @@ import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import UserContext from "../../contexts/UserContext";
 
-import Menu from "../Menu";
-import TopBar from "../TopBar";
-import { Title } from "../Generic/Title";
+import Menu from "../generic/Menu";
+import TopBar from "../generic/TopBar";
+import { Title } from "../generic/Title";
 import { Container, ListOfHabits, Percentage, TitleContainer } from "./style";
 
 import dayjs from "dayjs";

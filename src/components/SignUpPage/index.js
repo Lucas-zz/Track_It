@@ -5,9 +5,9 @@ import { useNavigate } from "react-router-dom";
 
 import { Container, StyledLink, ErrorMessage } from "./style";
 
-import BigLogo from "../BigLogo";
-import Button from "../Generic/Button";
-import Input from "../Generic/Input";
+import BigLogo from "../generic/BigLogo";
+import Button from "../generic/Button";
+import Input from "../generic/Input";
 import UserContext from "../../contexts/UserContext";
 
 export default function SignUpPage() {

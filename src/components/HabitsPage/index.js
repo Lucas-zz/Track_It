@@ -5,13 +5,13 @@ import Loader from "react-loader-spinner";
 import UserContext from "../../contexts/UserContext";
 
 import DayOfTheWeek from "../DayOfTheWeek";
-import Input from "../Generic/Input";
-import Menu from "../Menu";
-import TopBar from "../TopBar";
+import Input from "../generic/Input";
+import { Title } from "../generic/Title";
+import Menu from "../generic/Menu";
+import TopBar from "../generic/TopBar";
 import UserHabit from "../UserHabit";
 
-import { Title } from "../Generic/Title";
-import { DefaultMessage } from "../Generic/DefaultMessage";
+
 import { Button, ButtonsContainer, Container, Header, NewHabit, WeekDays } from "./style";
 
 export default function HabitsPage() {

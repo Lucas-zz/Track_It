@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import UserContext from "../../contexts/UserContext";
-import { DefaultMessage } from "../Generic/DefaultMessage";
-import Menu from "../Menu";
-import { Title } from "../Generic/Title";
-import TopBar from "../TopBar";
+import { DefaultMessage } from "../generic/DefaultMessage";
+import Menu from "../generic/Menu";
+import { Title } from "../generic/Title";
+import TopBar from "../generic/TopBar";
 import { Container, Header } from "./style";
 
 export default function HistoryPage() {
