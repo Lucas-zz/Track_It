@@ -11,3 +11,5 @@ Nessa aplicação é possível o cadastro (sign up) de uma conta e, ao logar (si
 ## Deploy
 
 Mobile: https://track-it-lucas-zz.vercel.app/
+
+###### obs: possui uma certa responsividade, tanto para Desktop quanto para Tablet.
