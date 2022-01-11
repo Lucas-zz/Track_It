@@ -13,7 +13,7 @@ import TopBar from "../generic/TopBar";
 import UserHabit from "../UserHabit";
 
 
-import { Button, ButtonsContainer, Container, Header, NewHabit, WeekDays } from "./style";
+import { Button, ButtonsContainer, CenterLoader, Container, Header, NewHabit, WeekDays } from "./style";
 
 export default function HabitsPage() {
     const { user, token, isLoading, setLoading, setPercentage } = useContext(UserContext);
@@ -28,7 +28,7 @@ export default function HabitsPage() {
     })
 
     useEffect(() => {
-        setLoading(false);
+        setLoading(true);
         setReset(false);
         setCreateHabit(false);
         setNewHabit({
@@ -43,6 +43,7 @@ export default function HabitsPage() {
         });
 
         promise.then(response => {
+            setLoading(false);
             setHabitData(response.data)
         });
 
@@ -87,8 +88,6 @@ export default function HabitsPage() {
             setLoading(false),
         )
     }
-
-    console.log(habitData);
 
     function removeHabit(id) {
         const areYouSureAboutThat = window.confirm("Você realmente gostaria de escluir esse hábito?");
@@ -148,14 +147,20 @@ export default function HabitsPage() {
                     <Button padding={true} width={'40px'} background={'#52B6FF'} onClick={() => { setCreateHabit(true) }}>+</Button>
                 </Header>
                 {createHabit === true && createHabitForm()}
-                {habitData.length === 0
+                {isLoading && (habitData.length === 0 &&
+                    <CenterLoader>
+                        <Loader type="ThreeDots" color="#52B6FF" height={25} width={150} />
+                    </CenterLoader>
+                )}
+                {isLoading === false && (habitData.length === 0
                     ?
                     <DefaultMessage>Você não tem nenhum hábito cadastrado ainda. Adicione um hábito para começar a trackear!</DefaultMessage>
                     :
                     <>
                         {habitData.map((el, id) => <UserHabit key={id} data={el} removeHabit={removeHabit} />)}
                     </>
-                }
+                )}
+
             </Container>
             <Menu />
         </>

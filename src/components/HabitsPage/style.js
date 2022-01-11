@@ -62,6 +62,7 @@ const NewHabit = styled.div`
 
     background-color: #FFF;
 
+    opacity: ${props => props.isLoading ? 0.7 : 1.0};
     ${props => props.isLoading && "pointer-events: none"}
 `;
 
@@ -83,6 +84,18 @@ const ButtonsContainer = styled.div`
     gap: 10px;
 `
 
+const CenterLoader = styled.div`
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 100px;
+    
+`
+
 export {
     Container,
     Header,
@@ -90,5 +103,5 @@ export {
     NewHabit,
     WeekDays,
     ButtonsContainer,
-
+    CenterLoader,
 }
