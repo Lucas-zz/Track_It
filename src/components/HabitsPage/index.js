@@ -86,7 +86,7 @@ export default function HabitsPage() {
         promise.catch((response) =>
             console.log(response.data),
             setLoading(false),
-        )
+        );
     }
 
     function removeHabit(id) {
