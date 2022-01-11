@@ -9,7 +9,7 @@ export default function DayOfTheWeek({ state, setState, createHabit, weekday }) 
     useEffect(() => {
         let newState = { ...state }
         setSelected(newState.days.indexOf(weekday) !== -1)
-    }, []);
+    }, [state, weekday]);
 
     if (createHabit === true) {
         let newState = { ...state }

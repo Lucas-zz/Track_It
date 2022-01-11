@@ -34,7 +34,7 @@ export default function HistoryPage() {
         promise.then(error => {
             console.log(error.data.message);
         })
-    }, [reset]);
+    }, [reset, setPercentage, token]);
 
     function integer(data) {
         if (isNaN(parseInt(data.filter((element) => element.done === true).length / data.length * 100))) {

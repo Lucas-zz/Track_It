@@ -1,15 +1,12 @@
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import UserContext from "../../../contexts/UserContext";
-import { useNavigate } from "react-router-dom";
 
 import { Container, StyledLink, ProgressBar } from "./style";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import 'react-circular-progressbar/dist/styles.css';
 
 export default function Menu() {
-
-    const navigate = useNavigate();
 
     const [reset, setReset] = useState([]);
     const { percentage, setPercentage, token } = useContext(UserContext);
@@ -29,7 +26,7 @@ export default function Menu() {
 
         promise.catch((error) => console.log(error.response.data));
 
-    }, [reset]);
+    }, [reset, setPercentage, token]);
 
     function integer(data) {
         if (isNaN(parseInt(data.filter((element) => element.done === true).length / data.length * 100))) {

@@ -56,7 +56,7 @@ export default function HabitsPage() {
             setPercentage(integer(response.data));
         });
 
-    }, [reset]);
+    }, [reset, setLoading, setPercentage, token]);
 
     function integer(data) {
         if (isNaN(parseInt(data.filter((element) => element.done === true).length / data.length * 100))) {
