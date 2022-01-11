@@ -43,7 +43,7 @@ export default function LoginPage() {
         setUser(response.data);
         setToken(response.data.token);
 
-        navigate('/habitos');
+        navigate('/hoje');
     }
 
     function handleError(error) {
