@@ -27,7 +27,7 @@ Try it out now <a href="https://track-it-lucas-zz.vercel.app/" target="_blank"><
 This app has the following features:
   - Enables the user to sign in their account
   - In case they don't have any, it's possible to create one in the sign up page
-    - To sign up, the user needs to inform their Email, Password, Name and an avaialble URL image choosen by them.
+    - To sign up, the user needs to inform their Email, Password, Name and an available URL image choosen by them.
   - After logging in, it's shown the ```TodayPage```, where the user can:
     -  Check their daily habits, if they have any
     -  Click on the checkmark to mark it as done in that day
