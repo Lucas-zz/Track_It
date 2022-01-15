@@ -20,7 +20,7 @@ First time using libs like ```react-circular-progressbar``` and ```dayjs```!
 <br />
 
 Try it out now <a href="https://track-it-lucas-zz.vercel.app/" target="_blank"><strong>here</strong></a>.
-###### obs: possui uma certa responsividade, tanto para Desktop quanto para Tablet.
+###### obs: has a certain responsivity to Tablet and Desktop.
 
 ### About
 
