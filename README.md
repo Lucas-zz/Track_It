@@ -14,7 +14,7 @@ First time using libs like ```react-circular-progressbar``` and ```dayjs```!
 ## Overview
 
 <div align='center'>
-  <img style='ustify-content: center' src='/src/assets/img/cineflex.gif' />
+  <img style='ustify-content: center' src='/src/assets/img/TrackIt.gif' />
 </div>
 
 <br />
