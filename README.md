@@ -27,18 +27,18 @@ Try it out now <a href="https://track-it-lucas-zz.vercel.app/" target="_blank"><
 This app has the following features:
   - Enables the user to sign in their account
   - In case they don't have any, it's possible to create one in the sign up page
-    - To sign up, the user needs to inform their Email, Password, Name and an available URL image choosen by them.
-  - After logging in, it's shown the ```TodayPage```, where the user can:
+    - To sign up, the user needs to inform their Email, Password, Name and an available URL image chosen by them.
+  - After logging in the ```TodayPage``` is shown, in which the user can:
     -  Check their daily habits, if they have any
     -  Click on the checkmark to mark it as done in that day
     -  Track their current streak and record of days that task/habit has been done
     -  And shows the user their daily progress in a circular progress bar on the botton center of the page
-  - In the case the user has no habits to be tracked, they can go to the ```HabitsPage```
-    - Here, the user can create their habits
-    - Choose the days they want to do that habit
+  - In the case the user has no habits to be tracked, they can go to the ```HabitsPage```, being able to:
+    - Create their habits
+    - Choose the days to do the habit
     - Save or Cancel the habits' creation
-    - And, in case of a change of mind, it's possible to delete the habit by clicking on the trashcan icon
-  - Besides that, on the ```HystoryPage``` the user can track their progress on a month calendar, where its shown if all the habits have been done on that day or not
+    - And delete the habit by clicking on the trashcan icon
+  - Besides that, on the ```HystoryPage``` the user can track their progress on a month calendar, where it's possible to track the days the habis have been done or not
     - <i>To be implemented</i>
 
 ### Built with
