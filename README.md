@@ -1,6 +1,6 @@
 # Track It
 
-An application to help the user track their daily habits, being able to sign-up and sign-in, creating a personal space! <br/>
+An application to help the user track their daily habits, where it's possible to sign-up and sign-in to create a personal space! <br/>
 First time using libs like ```react-circular-progressbar``` and ```dayjs```!
 
 ## Table of Contents
