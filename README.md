@@ -67,7 +67,7 @@ The following tools and libs were used in the construction of the project: <br /
 npm i
 ```
 
-3. Run the front-end with
+3. Run the app with
 ```bash
 npm start
 ```
