@@ -28,7 +28,7 @@ This app has the following features:
   - Enables the user to sign in their account
   - In case they don't have any, it's possible to create one in the sign up page
     - To sign up, the user needs to inform their Email, Password, Name and an valid URL image chosen by them.
-  - After logging in the ```TodayPage``` is shown, in which the user can:
+  - After logging in, the ```TodayPage``` is shown, in which the user can:
     -  Check their daily habits, if they have any
     -  Click on the checkmark to mark it as done in that day
     -  Track their current streak and record of days that task/habit has been done
