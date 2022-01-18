@@ -90,7 +90,7 @@ export default function HabitsPage() {
     }
 
     function removeHabit(id) {
-        const areYouSureAboutThat = window.confirm("Você realmente gostaria de escluir esse hábito?");
+        const areYouSureAboutThat = window.confirm("Você realmente gostaria de excluir esse hábito?");
 
         if (areYouSureAboutThat === true) {
             setLoading(true);
