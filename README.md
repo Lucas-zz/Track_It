@@ -83,4 +83,4 @@ npm run build
 
 - LinkedIn - [Lucas Azzolini Vieira](https://www.linkedin.com/in/azzolinilucas/)
 - Frontend Mentor - [@Lucas-zz](https://www.frontendmentor.io/profile/Lucas-zz)
-- Twitter - [@zulenno](https://twitter.com/zulenno)
+- GMail - [lucasazzollinivieira@gmail.com](mailto:lucasazzollinivieira@gmail.com)
