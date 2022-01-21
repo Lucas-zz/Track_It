@@ -7,7 +7,7 @@ First time using libs like ```react-circular-progressbar``` and ```dayjs```!
 
 - [Overview](#overview)
   - [About](#about)
-  - [Built with](#built-with)
+- [Built with](#built-with)
 - [How to run](#how-to-run)
 - [Author](#author)
 
@@ -41,7 +41,7 @@ This app has the following features:
   - Besides that, on the ```HystoryPage``` the user can track their progress on a month calendar, where it's possible to track the days the habis have been done or not
     - <i>To be implemented</i>
 
-### Built with
+## Built with
 
 The following tools and libs were used in the construction of the project: <br />
 
@@ -73,14 +73,16 @@ npm i
 npm start
 ```
 
-4. You can optionally build the project running
+<!-- 4. You can optionally build the project running
 ```bash
 npm run build
-```
-5. Finally, access http://localhost:3000 on your favorite browser (unless it is Internet Explorer. In this case, review your life decisions)
+``` -->
+
+4. Finally, access http://localhost:3000 (the port ':3000' is subjected to changes) on your favorite browser (unless it is Internet Explorer. In this case, review your life decisions)
 
 ## Author
 
 - LinkedIn - [Lucas Azzolini Vieira](https://www.linkedin.com/in/azzolinilucas/)
 - Frontend Mentor - [@Lucas-zz](https://www.frontendmentor.io/profile/Lucas-zz)
 - GMail - [lucasazzollinivieira@gmail.com](mailto:lucasazzollinivieira@gmail.com)
+<!-- - Twitter - [@zulenno](https://twitter.com/zulenno) -->
