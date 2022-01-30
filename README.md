@@ -57,6 +57,12 @@ The following tools and libs were used in the construction of the project: <br /
   <img style='margin: 5px;' src="https://img.shields.io/badge/react_router%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB">
   <img style='margin: 5px;' src='https://img.shields.io/badge/react_circular_progressbar%20-%2320232a.svg?&style=for-the-badge&color=3E98C7&logo=react&logoColor=%3E98C7'>
 </p>
+<p>
+  <img style='margin: 5px;' src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white">
+  <img style='margin: 5px;' src="https://img.shields.io/badge/Microsoft_Edge-0078D7?style=for-the-badge&logo=Microsoft-edge&logoColor=white">
+  <img style='margin: 5px;' src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white">
+  <img style='margin: 5px;' src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
+</p>
 
 ## How to run
 
